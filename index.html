@@ -25,11 +25,50 @@
             /* border-radius: 10px;
             border-top-right-radius: 50px; */
         }
+
+        textarea{
+            resize: none;
+        }
     </style>
 </head>
 <body>
     <div class="box">
         Test box model
     </div>
+
+    <form action="">
+
+        <div>
+            <label for="name">Name</label>
+            <input name="name" type="text" id="name" required>
+        </div>
+
+        <div>
+            <input type="radio" id="gay" name="sex" value="gay">
+            <label for="gay">gay</label>
+        </div>
+    
+        <div>
+            <input type="radio" id="etero" name="sex" value="etero">
+            <label for="etero">etero</label>
+        </div>
+    
+        <div>
+            <select name="professione">
+                <option value="01">Insegnante</option>
+                <option value="02">Prostituta</option>
+                <option value="03" selected>Top-G</option>
+            </select>
+        </div>
+    
+        <div>
+            <textarea name="message" cols="30" rows="10">scrivi...</textarea>
+        </div>
+
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
 </body>
 </html>
